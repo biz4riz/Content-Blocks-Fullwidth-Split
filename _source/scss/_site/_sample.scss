@@ -1,0 +1,42 @@
+/************************************************************************/
+/* PROJECT SAMPLE STYLES
+/************************************************************************/
+
+.split_content {
+	
+	&.full {
+	
+		.block {
+			padding: 8rem 0 4rem;
+			width: 100%;
+			
+			@include breakpoint($md) { width: 50%; }
+			
+			&.bg_img { 
+				background-image: url('https://www.placecage.com/g/740/600'); 
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			.wrap { 
+	
+				@include breakpoint($md) {
+					margin: 0;
+					max-width: 55rem; 				
+				}
+				&.left { 
+					@include breakpoint($md) { float: left; } 
+				}
+				&.right { 
+					@include breakpoint($md) { float: right; } 
+				}
+				
+				>div { 
+					@include breakpoint($md) { padding: 0; } 
+				}
+			}
+		}
+	}
+}
+

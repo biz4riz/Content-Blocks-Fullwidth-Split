@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="contentblocksfullwidthsplit">Content Blocks Fullwidth Split</h1>
+
+<p>Split content contained with fullwidth background color/image. </p>
+
+<p><a href="http://biz4riz.com/development/github-projects/content-blocks-fullwidth-split/">View Demo</a></p>
+
+<h3>Styles</h3>
+
+<pre><code class="html">
+.row_flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.split_content.full .block {
+  padding: 8rem 0 4rem;
+  width: 100%;
+}
+@media (min-width: 570px) {
+  .split_content.full .block {
+    width: 50%;
+  }
+}
+.split_content.full .block.bg_img {
+  background-image: url(&quot;https://www.placecage.com/g/740/600&quot;);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap {
+    margin: 0;
+    max-width: 55rem;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap.left {
+    float: left;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap.right {
+    float: right;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap &gt; div {
+    padding: 0;
+  }
+}
+</code></pre>
+
+<h3>Classes</h3>
+
+<p>Inset classes add padding, dictated by the number of columns set within the class, on either side of the element.
+inset<em>[breakpoint]</em>[columns]</p>
+
+<p>Pull classes add margins, dictated by the number of columns set within the class, on the left side of the element.
+push<em>[breakpoint]</em>[columns]</p>
+
+<p>Push classes add margins, dictated by the number of columns set within the class, on the left side of the element.
+push<em>[breakpoint]</em>[columns]</p>
+
+<h3>HTML</h3>
+
+<pre><code class="html">
+// Adding .full to split content in case there are other content block sections that are not fullwidth
+
+&lt;section class=&quot;split_content full&quot;&gt;    
+
+    // Using Flexbox to split the columns and to display the content blocks at equal heights    
+    
+    &lt;div class=&quot;row_flex&quot;&gt;
+        &lt;div class=&quot;block bg_blue&quot;&gt;
+        
+            // The class .right floats the content within the block to the right when the content block splits
+        
+            &lt;div class=&quot;wrap right&quot;&gt;
+                &lt;div class=&quot;inset_md_1 pull_md_1 pull_lg_2&quot;&gt;
+                    &lt;h3&gt;Inceptos Condimentum Commodo&lt;/h3&gt;
+                    &lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
+                    &lt;p&gt;&lt;img src=&quot;http://placehold.it/550x200&quot; alt=&quot;[ALT TEXT HERE]&quot; /&gt;&lt;/p&gt;
+                    &lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;block bg_img&quot;&gt;
+        
+            // The class .left floats the content within the block to the left when the content block splits
+            
+            &lt;div class=&quot;wrap left&quot;&gt;
+                &lt;div class=&quot;inset_md_1 push_md_1 push_lg_2&quot;&gt;
+                    &lt;h3&gt;Donec id elit non mi porta gravida at eget metus.&lt;/h3&gt;
+                    &lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+                    &lt;p&gt;Fill out and submit this form, and we’ll give you a downloadable bidding template and helpful information about being financially ready to take on multiple projects.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/************************************************************************/
+/* BASE TEMPLATE STYLES
+/************************************************************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: white;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+}
+
+body {
+  background: white;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+section {
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.section_title {
+  padding: 1.5rem 0;
+}
+.section_title h1, .section_title h2, .section_title h3, .section_title h4, .section_title h5, .section_title h6 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.bg_blue {
+  background-color: #00b4bc;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/************************************************************************/
+/* TYPOGRAPHY
+/************************************************************************/
+a {
+  color: #00b4bc;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:visited {
+  color: #00b4bc;
+}
+a:hover {
+  text-decoration: none;
+  color: #00b5bd;
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-rendering: optimizelegibility;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+/************************************************************************/
+/* PROJECT SAMPLE STYLES
+/************************************************************************/
+.split_content.full .block {
+  padding: 8rem 0 4rem;
+  width: 100%;
+}
+@media (min-width: 570px) {
+  .split_content.full .block {
+    width: 50%;
+  }
+}
+.split_content.full .block.bg_img {
+  background-image: url("https://www.placecage.com/g/740/600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap {
+    margin: 0;
+    max-width: 55rem;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap.left {
+    float: left;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap.right {
+    float: right;
+  }
+}
+@media (min-width: 570px) {
+  .split_content.full .block .wrap > div {
+    padding: 0;
+  }
+}
