@@ -54,13 +54,13 @@ Split content contained with fullwidth background color/image.
 ```
 
 <h3>Classes</h3>
-Inset classes add padding, dictated by the number of columns set within the class, on either side of the element. 
+<strong>Inset classes</strong>  add padding, dictated by the number of columns set within the class, on either side of the element. 
 inset_[breakpoint]_[columns]
 
-Pull classes add margins, dictated by the number of columns set within the class, on the left side of the element. 
+<strong>Pull classes</strong> add margins, dictated by the number of columns set within the class, on the left side of the element. 
 push_[breakpoint]_[columns]
 
-Push classes add margins, dictated by the number of columns set within the class, on the left side of the element. 
+<strong>Push classes</strong>  add margins, dictated by the number of columns set within the class, on the left side of the element. 
 push_[breakpoint]_[columns]
 
 <h3>HTML</h3>
@@ -94,7 +94,7 @@ push_[breakpoint]_[columns]
 				<div class="inset_md_1 push_md_1 push_lg_2">
 					<h3>Donec id elit non mi porta gravida at eget metus.</h3>
 					<p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p>Fill out and submit this form, and we’ll give you a downloadable bidding template and helpful information about being financially ready to take on multiple projects.</p>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.</p>
 				</div>
 			</div>
 		</div>
